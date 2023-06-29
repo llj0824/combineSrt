@@ -18,6 +18,13 @@ The script prompts the user to enter the names of the two SRT files to be merged
 
 Please note that this script assumes that the two SRT files have the same number of blocks and that the timecodes in corresponding blocks match. If these conditions are not met, the script will raise an error.
 
+Example:
+```
+python combineSrt.py
+Enter the first srt file: [chinese]北京遇上西雅图.srt
+Enter the second srt file: [eng]北京遇上西雅图.srt
+```
+
 ## Error Handling
 
 The script includes error handling to ensure that the two SRT files can be correctly merged. If the number of blocks in the two files does not match, or if the timecodes in corresponding blocks do not match, the script will raise a ValueError with a message indicating the nature of the mismatch.
